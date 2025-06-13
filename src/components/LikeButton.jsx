@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 function LikeButton() {
-  const [like, setlike] = useState(0);
+  const [like1, setlike1] = useState(0);
+  const [like2, setlike2] = useState(0);
   return (
     <>
-      <button onClick={() => setlike(like + 1)}>{like} Likes</button>
-      <button onClick={() => setlike(like + -1)}>{like} Likes</button>
+      <button onClick={() => setlike1(like1 + 1)}>{like1} Likes</button>
+      <button onClick={() => setlike2(like2 + 1)}>{like2} Likes</button>
     </>
   );
 }
